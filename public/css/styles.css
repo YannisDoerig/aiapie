@@ -13,6 +13,7 @@
 :root {
   --main-color: #b3ffc7;
   --main-color-rgb: 179, 255, 199;
+  --main-text-color: #ffffff;
   --darker-color: #68e0e2;
   --darker-color-rgb: 104, 224, 226;
   --text-gray: #3b3232;
@@ -27,7 +28,7 @@
 
 html,
 body {
-  background: white;
+  background: rgb(114, 114, 114);
   font-family: "Chakra Petch", sans-serif;
   margin: 0px; /* removed standart pargin of 8px*/
   position: relative; /* required if we want to use "position: absolute" on a child element */
@@ -35,15 +36,15 @@ body {
 }
 h1 {
   font-size: large;
-  color: black;
+  color: var(--main-text-color);
 }
 h2 {
   font-size: medium;
-  color: black;
+  color: var(--main-text-color);
 }
 p {
   font-size: small;
-  color: black;
+  color: var(--main-text-color);
 }
 /* Header */
 .header-wrapper {
@@ -58,12 +59,7 @@ p {
   align-content: center;
   text-align: center;
   padding-top: 24px;
-  background: rgb(179, 255, 199);
-  background: linear-gradient(
-    180deg,
-    rgba(179, 255, 199, 1) 0%,
-    rgba(104, 224, 226, 1) 100%
-  );
+  background: white;
 }
 /* Main */
 .main-wrapper {
@@ -93,10 +89,5 @@ p {
   align-content: center;
   text-align: center;
   padding-top: 24px;
-  background: rgb(179, 255, 199);
-  background: linear-gradient(
-    180deg,
-    rgba(179, 255, 199, 1) 0%,
-    rgba(104, 224, 226, 1) 100%
-  );
+  background: white;
 }
