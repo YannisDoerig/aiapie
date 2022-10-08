@@ -1,0 +1,102 @@
+/* Master Styles */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+:root {
+  --main-color: #b3ffc7;
+  --main-color-rgb: 179, 255, 199;
+  --darker-color: #68e0e2;
+  --darker-color-rgb: 104, 224, 226;
+  --text-gray: #3b3232;
+  --text-light: white;
+  --dark: black;
+  --light: white;
+  --footer-color: #535353;
+  --header-color: #2193b0;
+  --box-shadow: 0px 5px 8px 1px #888888;
+  --box-shadow-red: 0px 5px 8px 1px #ca1912;
+}
+
+html,
+body {
+  background: white;
+  font-family: "Chakra Petch", sans-serif;
+  margin: 0px; /* removed standart pargin of 8px*/
+  position: relative; /* required if we want to use "position: absolute" on a child element */
+  height: 100%;
+}
+h1 {
+  font-size: large;
+  color: black;
+}
+h2 {
+  font-size: medium;
+  color: black;
+}
+p {
+  font-size: small;
+  color: black;
+}
+/* Header */
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  font-weight: bold;
+  width: 100%;
+  padding: 0 24px 24px 24px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding-top: 24px;
+  background: rgb(179, 255, 199);
+  background: linear-gradient(
+    180deg,
+    rgba(179, 255, 199, 1) 0%,
+    rgba(104, 224, 226, 1) 100%
+  );
+}
+/* Main */
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  font-weight: bold;
+  width: 100%;
+  padding: 0 24px 24px 24px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding-top: 24px;
+  background: white;
+}
+/* Footer */
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  font-weight: bold;
+  width: 100%;
+  padding: 0 24px 24px 24px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding-top: 24px;
+  background: rgb(179, 255, 199);
+  background: linear-gradient(
+    180deg,
+    rgba(179, 255, 199, 1) 0%,
+    rgba(104, 224, 226, 1) 100%
+  );
+}
