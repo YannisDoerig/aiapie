@@ -62,10 +62,16 @@
           <div class="register-email-container">
             <div class="register-email-title">Register to stay up to date.</div>
             <div class="register-email-form-wrapper">
-              <form action="" enctype="text/plain">
-                <input type="text" name="name" placeholder="Name" />
-                <input type="email" name="mail" placeholder="email@mail.com" />
-                <input type="submit" value="Register" class="submit" />
+              <form ref="formRef" onSubmit="submitRegistration()">
+                <input
+                  required
+                  placeholder="Name abab*"
+                  type="text"
+                  minlength="3"
+                  maxlength="25"
+                />
+                <input required placeholder="Email Address*" type="email" />
+                <button type="submit" class="submit">Register</button>
               </form>
             </div>
           </div>
@@ -89,10 +95,7 @@
       <div class="copy-right">©️ 2022 all rights reserved to aiapie.</div>
     </div>
 
-    <script type="module" src="../firebaseConfig.js"></script>
     <script type="module" src="scripts/script.js"></script>
     <script type="module" src="scripts/auth.js"></script>
-    <script type="module" src="../services/index.js"></script>
-    <script type="module" src="../services/registerForm.js"></script>
   </body>
 </html>

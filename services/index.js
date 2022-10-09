@@ -1,9 +1,9 @@
 import { addDoc, collection, Timestamp } from "firebase/firestore/lite";
 import { firestore } from "firebaseConfig";
 
-export const sendContactForm = async ({ name, email }) => {
+export const registerEmail = async ({ name, email }) => {
   try {
-    const ref = collection(firestore, "contact");
+    const ref = collection(firestore, "aiapie-newletter");
     await addDoc(ref, {
       name,
       email,
