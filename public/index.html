@@ -62,18 +62,27 @@
           <div class="register-email-container">
             <div class="register-email-title">Register to stay up to date.</div>
             <div class="register-email-form-wrapper">
-              <form ref="formRef" onSubmit="submitRegistration()">
+              <form ref="formRef" id="email-form">
                 <input
                   required
                   placeholder="Name abab*"
                   type="text"
                   minlength="3"
                   maxlength="25"
+                  id="newName"
                 />
-                <input required placeholder="Email Address*" type="email" />
-                <button type="submit" class="submit">Register</button>
+                <input
+                  required
+                  placeholder="Email Address*"
+                  type="email"
+                  id="newEmail"
+                />
+                <button type="submit" class="submitBtn">Register</button>
               </form>
             </div>
+          </div>
+          <div class="registered-successfully" style="display: none">
+            You Registered Successfully!
           </div>
         </div>
         <div class="additional-content-wrapper">
@@ -96,6 +105,6 @@
     </div>
 
     <script type="module" src="scripts/script.js"></script>
-    <script type="module" src="scripts/auth.js"></script>
+    <!-- <script type="module" src="scripts/auth.js"></script> -->
   </body>
 </html>

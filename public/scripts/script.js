@@ -1,6 +1,10 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs } from "firebase/firestore/lite";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+import {
+  getFirestore,
+  addDoc,
+  collection,
+} from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -20,11 +24,34 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const firestore = getFirestore(app);
 
-const submitRegistration = async function () {
+function handleForm(event) {
+  event.preventDefault();
+  let newName = document.getElementById("newName").value;
+  let newEmail = document.getElementById("newEmail").value;
+  if (newName != undefined && newEmail != undefined) {
+    submitRegistration(newName, newEmail);
+    hideForm();
+  } else {
+    console.log("one of the values was undefined");
+  }
+}
+
+const submitRegistration = async function (newName, newEmail) {
   // Add a new document with a generated id.
   const docRef = await addDoc(collection(firestore, "aiapie-newsletter"), {
-    name: "Tokyo",
-    email: "Japan",
+    name: newName,
+    email: newEmail,
   });
   console.log("Document written with ID: ", docRef.id);
 };
+
+const form = document
+  .getElementById("email-form")
+  .addEventListener("submit", handleForm);
+
+function hideForm() {
+  document.getElementById("email-form").style.display("none");
+  document
+    .getElementsByClassName("registered-successfully")
+    .style.display("true");
+}
