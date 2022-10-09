@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Chakra Petch", sans-serif;
+  font-family: sans-serif;
 }
 
 :root {
@@ -30,7 +30,7 @@ html,
 body {
   background: black;
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  font-family: "Chakra Petch", sans-serif;
+  font-family: sans-serif;
   margin: 0px; /* removed standart pargin of 8px*/
   position: relative; /* required if we want to use "position: absolute" on a child element */
   height: 100%;
