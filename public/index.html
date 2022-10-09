@@ -25,26 +25,15 @@
       <div class="header-title">aiapie</div>
     </div>
     <div class="intro-wrapper">
-      <div class="intro-background-img">
-        <img
-          src="/images/home-banner-background-s.jpg"
-          alt="home banner image of pc"
-        />
-      </div>
+      <div class="intro-background-img"></div>
       <div class="intro-overlay">
-        <img src="/images/logo.png" alt="aiapie logo" />
+        <img src="/images/logo-gradient.png" alt="aiapie logo" />
         <h1>work efficently.</h1>
         <h2>Tips, tricks & tools to work better and faster.</h2>
       </div>
     </div>
     <div class="main-wrapper">
       <div class="services-wrapper">
-        <div class="services-title">stay up to date</div>
-        <div class="services-description">
-          Technology evolves extremely fast, we keep you updated about all the
-          new tools, tips and tricks that allow you to be more efficient, saving
-          you money and time.
-        </div>
         <div class="services-sections-wrapper">
           <div class="service-section">
             <div class="service-title">Best Tools</div>
@@ -60,19 +49,38 @@
               time and money.
             </div>
           </div>
-          <div class="service-section">
-            <div class="service-title">Interesting News</div>
-            <div class="service-description">
-              If we share a tool, tip, or trick we tested it beforehand to
-              ensure that it actually increases your productivity.
+        </div>
+        <div class="services-title">stay up to date</div>
+        <div class="services-description">
+          Technology evolves extremely fast, we keep you updated about all the
+          new tools, tips and tricks that allow you to be more efficient, saving
+          you money and time.
+        </div>
+      </div>
+      <div class="second-row-content-wrapper">
+        <div class="register-email-wrapper">
+          <div class="register-email-container">
+            <div class="register-email-title">Register to stay up to date.</div>
+            <div class="register-email-form-wrapper">
+              <form action="" enctype="text/plain">
+                <input type="text" name="name" placeholder="Name" />
+                <input type="email" name="mail" placeholder="email@mail.com" />
+                <input type="submit" value="Register" class="submit" />
+              </form>
             </div>
           </div>
         </div>
-      </div>
-      <div class="register-email-wrapper">
-        <div class="register-email-container">
-          <div class="register-email-title">Register to stay up to date.</div>
-          <div class="register-email-input">email....</div>
+        <div class="additional-content-wrapper">
+          <div class="additional-content-title">Why everyone should use AI</div>
+          <div class="additional-content-content">text text text</div>
+          <button class="additional-content-btn">Find out more</button>
+        </div>
+        <div class="additional-content-wrapper">
+          <div class="additional-content-title">
+            Outsourcing is a must to Grow
+          </div>
+          <div class="additional-content-content">text text text</div>
+          <button class="additional-content-btn">Find out more</button>
         </div>
       </div>
     </div>
@@ -81,7 +89,10 @@
       <div class="copy-right">©️ 2022 all rights reserved to aiapie.</div>
     </div>
 
+    <script type="module" src="../firebaseConfig.js"></script>
     <script type="module" src="scripts/script.js"></script>
     <script type="module" src="scripts/auth.js"></script>
+    <script type="module" src="../services/index.js"></script>
+    <script type="module" src="../services/registerForm.js"></script>
   </body>
 </html>

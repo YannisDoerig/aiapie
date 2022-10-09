@@ -1,14 +1,9 @@
 .intro-wrapper {
   position: relative;
   margin-bottom: 12px;
-  background: black;
-}
-.intro-background-img img {
-  height: 350px;
+  background: rgb(27, 27, 27);
+  height: 340px;
   width: 100%;
-  object-fit: none;
-  z-index: -1;
-  opacity: 0.4;
 }
 .intro-overlay {
   position: absolute;
@@ -24,6 +19,7 @@
   object-fit: fill;
   height: 150px;
   width: 150px;
+  margin-bottom: 12px;
 }
 .intro-overlay h1 {
   margin: 12px 0;
@@ -33,27 +29,23 @@
   flex-direction: column;
   align-items: center;
 }
-.services-title {
-  font-size: large;
-  font-weight: bold;
-  color: white;
-}
-.services-description {
-  font-size: medium;
-  color: white;
-  margin: 12px 0;
-  max-width: 660px;
-}
+
 .services-sections-wrapper {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin-top: 12px;
 }
 .service-section {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #ffdee9;
+  background-image: linear-gradient(
+    92.7deg,
+    rgba(245, 212, 212, 1) 8.5%,
+    rgba(252, 251, 224, 1) 90.2%
+  );
+
   box-shadow: 0px 4px 8px #000000;
   box-shadow: inset;
   padding: 24px;
@@ -63,21 +55,89 @@
   font-size: large;
   font-weight: bold;
   color: black;
-  margin-bottom: 12px;
+  margin: 12px 0;
 }
 .service-description {
   font-size: medium;
   color: black;
+  margin: 12px 0 24px 0;
+}
+
+.services-title {
+  margin-top: 24px;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+}
+.services-description {
+  font-size: medium;
+  color: white;
+  margin: 12px 0 24px 0;
+  max-width: 660px;
+}
+
+.second-row-content-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.additional-content-wrapper {
+  position: relative;
+  margin: 12px;
+  padding: 24px;
+  background-color: #ffdee9;
+  background-image: linear-gradient(
+    92.7deg,
+    rgba(245, 212, 212, 1) 8.5%,
+    rgba(252, 251, 224, 1) 90.2%
+  );
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px #000000;
+}
+.additional-content-title {
+  font-size: large;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 24px;
+}
+.additional-content-content {
+  font-size: medium;
+  color: #000000;
+}
+.additional-content-btn {
+  position: absolute;
+  bottom: 32px;
+  left: 10%;
+  width: 80%;
+  height: 35px;
+  border: 0px;
+  border-bottom: 2px solid black;
+}
+.additional-content-btn:hover {
+  border: 0;
+  color: white;
+  background-image: linear-gradient(
+    102.1deg,
+    rgba(96, 221, 142, 1) 8.7%,
+    rgba(24, 138, 141, 1) 88.1%
+  );
 }
 
 .register-email-wrapper {
-  width: 100%;
+  text-align: left;
+  min-width: 100%;
+  max-width: 660px;
 }
 .register-email-container {
   margin: 12px;
   padding: 24px;
-  background: white;
-  border-radius: 12px;
+  background-color: #ffdee9;
+  background-image: linear-gradient(
+    92.7deg,
+    rgba(245, 212, 212, 1) 8.5%,
+    rgba(252, 251, 224, 1) 90.2%
+  );
+  border-radius: 8px;
   box-shadow: 0px 4px 8px #000000;
 }
 .register-email-title {
@@ -86,7 +146,35 @@
   color: black;
   margin-bottom: 12px;
 }
-.register-email-input {
+.register-email-form-wrapper {
   font-size: medium;
   color: black;
+}
+
+.register-email-form-wrapper form input .submit:hover {
+  border: 0;
+  color: white;
+  background-image: linear-gradient(
+    102.1deg,
+    rgba(96, 221, 142, 1) 8.7%,
+    rgba(24, 138, 141, 1) 88.1%
+  );
+}
+
+/* CSS that should be displayed if width is equal to or less than 800px goes here */
+@media (max-width: 1000px) {
+  .services-sections-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .second-row-content-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .additional-content-btn {
+    width: 40%;
+    bottom: 24px;
+    left: 30%;
+  }
+  .additional-content-content {
+    margin-bottom: 62px;
+  }
 }
