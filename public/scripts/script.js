@@ -29,8 +29,8 @@ function handleForm(event) {
   let newName = document.getElementById("newName").value;
   let newEmail = document.getElementById("newEmail").value;
   if (newName != undefined && newEmail != undefined) {
-    submitRegistration(newName, newEmail);
     hideForm();
+    submitRegistration(newName, newEmail);
   } else {
     console.log("one of the values was undefined");
   }
@@ -45,13 +45,12 @@ const submitRegistration = async function (newName, newEmail) {
   console.log("Document written with ID: ", docRef.id);
 };
 
-const form = document
+let form = document
   .getElementById("email-form")
   .addEventListener("submit", handleForm);
 
 function hideForm() {
-  document.getElementById("email-form").style.display("none");
-  document
-    .getElementsByClassName("registered-successfully")
-    .style.display("true");
+  let form = (document.getElementById("email-form").style.display = "none");
+  document.getElementById("register-email-title").innerHTML =
+    "You Registered Successfully!";
 }

@@ -129,6 +129,7 @@
   max-width: 660px;
 }
 .register-email-container {
+  min-height: 218px;
   margin: 12px;
   padding: 24px;
   background-color: #ffdee9;
@@ -150,8 +151,7 @@
   font-size: medium;
   color: black;
 }
-
-.submitBtn {
+.register-email-form-wrapper button[type="submit"] {
   border: 0;
   border-bottom: 2px solid black;
   width: 80%;
@@ -164,7 +164,7 @@
   );
 }
 
-.submitBtn:hover {
+#submitBtn:hover {
   border: 0;
   color: white;
   background-image: linear-gradient(

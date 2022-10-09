@@ -60,12 +60,12 @@
       <div class="second-row-content-wrapper">
         <div class="register-email-wrapper">
           <div class="register-email-container">
-            <div class="register-email-title">Register to stay up to date.</div>
+            <div class="register-email-title" id="register-email-title">Register to stay up to date.</div>
             <div class="register-email-form-wrapper">
               <form ref="formRef" id="email-form">
                 <input
                   required
-                  placeholder="Name abab*"
+                  placeholder="Name*"
                   type="text"
                   minlength="3"
                   maxlength="25"
@@ -77,13 +77,11 @@
                   type="email"
                   id="newEmail"
                 />
-                <button type="submit" class="submitBtn">Register</button>
+                <input type="submit" id="submitBtn"></input>
               </form>
             </div>
           </div>
-          <div class="registered-successfully" style="display: none">
-            You Registered Successfully!
-          </div>
+          
         </div>
         <div class="additional-content-wrapper">
           <div class="additional-content-title">Why everyone should use AI</div>
