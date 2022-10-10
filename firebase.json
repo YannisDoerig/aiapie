@@ -4,12 +4,7 @@
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "redirects": [
       {
-        "source": "/test",
-        "destination": "/whyai.html",
-        "type": 301
-      },
-      {
-        "source": "/free-trial",
+        "source": "/tryjasper",
         "destination": "https://jasper.ai/free-trial?fpr=lazyenergy&fp_sid=pie",
         "type": 301
       }
