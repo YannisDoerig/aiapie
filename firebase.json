@@ -17,6 +17,11 @@
         "source": "/web-copy",
         "destination": "https://jasper.ai/website-copywriting-course?fpr=lazyenergy&fp_sid=ai",
         "type": 301
+      },
+      {
+        "source": "/haseeb",
+        "destination": "https://jasper.ai/free-trial?fpr=lazyenergy&fp_sid=haseeb",
+        "type": 301
       }
     ],
     "cleanUrls": true,
