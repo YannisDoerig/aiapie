@@ -7,6 +7,16 @@
         "source": "/tryjasper",
         "destination": "https://jasper.ai/free-trial?fpr=lazyenergy&fp_sid=pie",
         "type": 301
+      },
+      {
+        "source": "/seo",
+        "destination": "https://jasper.ai/seo-course?fpr=lazyenergy&fp_sid=pi",
+        "type": 301
+      },
+      {
+        "source": "/web-copy",
+        "destination": "https://jasper.ai/website-copywriting-course?fpr=lazyenergy&fp_sid=ai",
+        "type": 301
       }
     ],
     "cleanUrls": true,
