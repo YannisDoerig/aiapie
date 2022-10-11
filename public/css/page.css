@@ -115,7 +115,7 @@ p {
   transition: 0.2s;
 }
 .cta-btn button:hover {
-  border: 0px solid black;
+  border: 1px transparent black;
   background-color: black;
   color: white;
 }
