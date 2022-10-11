@@ -71,16 +71,19 @@ p {
 /* Main */
 .main-wrapper {
   display: flex;
-  flex-direction: column;
   color: black;
   font-weight: bold;
-  width: 40%;
+  width: 100%;
   padding: 0 24px 24px 24px;
   justify-content: center;
   align-items: center;
   align-content: center;
-  text-align: center;
+
   padding-top: 24px;
+}
+.main-content {
+  width: 40%;
+  text-align: center;
 }
 /* Footer */
 .footer-wrapper {
