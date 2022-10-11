@@ -104,6 +104,20 @@ p {
 .subtitle {
   margin: 12px 0;
 }
+.cta-btn button {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  padding: 12px;
+  transition: 0.2s;
+}
+.cta-btn button :hover {
+  border: 0px solid black;
+  background-color: black;
+  color: white;
+  margin: 12px 0 24px 0;
+  padding: 12px;
+}
 /* Footer */
 .footer-wrapper {
   display: flex;
