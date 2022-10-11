@@ -76,7 +76,8 @@ p {
   max-width: 600px;
   height: auto;
 }
-.banner {
+.banner img {
+  margin-top: 24px;
   max-width: 600px;
   height: auto;
 }
