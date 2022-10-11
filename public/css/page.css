@@ -109,12 +109,12 @@ p {
   background-color: white;
   color: black;
   font-weight: bold;
-  padding: 12px;
-  margin: 12px 0 24px 0;
-  border-radius: 8px;
+  padding: 12px 24px;
+  margin: 24px 0 24px 0;
+  border-radius: 4px;
   transition: 0.2s;
 }
-.cta-btn button :hover {
+.cta-btn button:hover {
   border: 0px solid black;
   background-color: black;
   color: white;
