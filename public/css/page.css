@@ -70,7 +70,7 @@ p {
 }
 .intro-wrapper {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 .intro-background img {
   height: 300px;
@@ -91,7 +91,13 @@ p {
 }
 .main-content {
   max-width: 600px;
-  text-align: center;
+  text-align: left;
+}
+.title {
+  margin: 24px 0;
+}
+.subtitle {
+  margin: 12px 0;
 }
 /* Footer */
 .footer-wrapper {
