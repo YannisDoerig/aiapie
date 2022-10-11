@@ -73,8 +73,12 @@ p {
   justify-content: center;
 }
 .intro-background img {
-  height: 300px;
-  width: auto;
+  max-width: 600px;
+  height: auto;
+}
+.banner {
+  max-width: 600px;
+  height: auto;
 }
 /* Main */
 .main-wrapper {
