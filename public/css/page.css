@@ -124,3 +124,18 @@ p {
     rgba(252, 251, 224, 1) 90.2%
   );
 }
+
+/* CSS that should be displayed if width is equal to or less than 800px goes here */
+@media (max-width: 600px) {
+  .intro-background img {
+    width: 100%;
+    height: auto;
+  }
+  .banner img {
+    width: 100%;
+    height: auto;
+  }
+  .main-content {
+    width: 90%;
+  }
+}
