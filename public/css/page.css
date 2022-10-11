@@ -13,7 +13,7 @@
 :root {
   --main-color: #b3ffc7;
   --main-color-rgb: 179, 255, 199;
-  --main-text-color: #ffffff;
+  --main-text-color: #000000;
   --darker-color: #68e0e2;
   --darker-color-rgb: 104, 224, 226;
   --text-gray: #3b3232;
@@ -28,8 +28,7 @@
 
 html,
 body {
-  background: black;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background: rgb(183, 183, 183);
   font-family: sans-serif;
   margin: 0px; /* removed standart pargin of 8px*/
   position: relative; /* required if we want to use "position: absolute" on a child element */
