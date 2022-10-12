@@ -27,6 +27,11 @@
         "source": "/wildfree",
         "destination": "https://jasper.ai/free-trial?fpr=lazyenergy&fp_sid=wf",
         "type": 301
+      },
+      {
+        "source": "/lazyenergy",
+        "destination": "https://jasper.ai/free-trial?fpr=lazyenergy&fp_sid=ytft",
+        "type": 301
       }
     ],
     "cleanUrls": true,
