@@ -32,6 +32,16 @@
         "source": "/lazyenergy",
         "destination": "https://jasper.ai/free-trial?fpr=lazyenergy&fp_sid=ytft",
         "type": 301
+      },
+      {
+        "source": "/tiktok",
+        "destination": "https://jasper.ai/free-trial?fpr=lazyenergy&fp_sid=tiktok",
+        "type": 301
+      },
+      {
+        "source": "/ig",
+        "destination": "https://jasper.ai/free-trial?fpr=lazyenergy&fp_sid=pieig",
+        "type": 301
       }
     ],
     "cleanUrls": true,
