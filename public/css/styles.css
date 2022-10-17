@@ -71,12 +71,10 @@ p {
   color: black;
   font-weight: bold;
   width: 100%;
-  padding: 0 24px 24px 24px;
   justify-content: center;
   align-items: center;
   align-content: center;
   text-align: center;
-  padding-top: 24px;
 }
 /* Footer */
 .footer-wrapper {
