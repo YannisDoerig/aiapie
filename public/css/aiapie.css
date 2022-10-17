@@ -24,114 +24,33 @@
 .intro-overlay h1 {
   margin: 12px 0;
 }
-.services-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.services-sections-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 12px;
-}
-.service-section {
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  background-color: #ffdee9;
-  background-image: linear-gradient(
-    92.7deg,
-    rgba(245, 212, 212, 1) 8.5%,
-    rgba(252, 251, 224, 1) 90.2%
-  );
-
-  box-shadow: 0px 4px 8px #000000;
-  box-shadow: inset;
-  padding: 24px;
-  margin: 12px;
-  transition: 0.3s;
-}
-.service-section:hover {
-  box-shadow: 0 0 0 black;
-}
-.service-title {
-  font-size: large;
+.intro-banner-aiapie {
   font-weight: bold;
-  color: black;
-  margin: 12px 0;
-}
-.service-description {
-  font-size: medium;
-  color: black;
-  margin: 12px 0 24px 0;
-}
-
-.services-title {
-  margin-top: 24px;
-  font-size: large;
-  font-weight: bold;
+  font-size: 32px;
   color: white;
 }
-.services-description {
-  font-size: medium;
-  color: white;
-  margin: 12px 0 24px 0;
-  max-width: 660px;
-}
 
-.second-row-content-wrapper {
+.content-wrapper {
   width: 100%;
+  height: auto;
+}
+.content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.additional-content-wrapper {
-  position: relative;
-  margin: 12px;
-  padding: 24px;
-  background-color: #ffdee9;
-  background-image: linear-gradient(
-    92.7deg,
-    rgba(245, 212, 212, 1) 8.5%,
-    rgba(252, 251, 224, 1) 90.2%
-  );
-  border-radius: 8px;
+  grid-template-columns: 1fr 3fr;
   box-shadow: 0px 4px 8px #000000;
-  transition: 0.3s;
+  border-radius: 8px;
+  border: 2px solid black;
 }
-.additional-content-wrapper:hover {
-  box-shadow: 0 0 0 black;
+.content img {
+  height: 200px;
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px #000000;
 }
-.additional-content-title {
-  font-size: large;
-  font-weight: bold;
-  color: #000000;
-  margin-bottom: 24px;
+.content-text-wrapper {
+  display: flex;
+  flex-direction: column;
 }
-.additional-content-content {
-  font-size: medium;
-  color: #000000;
-}
-.additional-content-btn {
-  position: absolute;
-  bottom: 32px;
-  left: 10%;
-  width: 80%;
-  height: 35px;
-  border: 0px;
-  border-bottom: 2px solid black;
-  transition: 0.4s;
-}
-.additional-content-btn:hover {
-  border: 0;
-  color: white;
-  background-image: linear-gradient(
-    102.1deg,
-    rgba(96, 221, 142, 1) 8.7%,
-    rgba(24, 138, 141, 1) 88.1%
-  );
-}
-
 .register-email-wrapper {
   text-align: left;
   min-width: 100%;
@@ -183,19 +102,6 @@
 }
 
 /* CSS that should be displayed if width is equal to or less than 800px goes here */
-@media (max-width: 1000px) {
-  .services-sections-wrapper {
-    grid-template-columns: 1fr;
-  }
-  .second-row-content-wrapper {
-    grid-template-columns: 1fr;
-  }
-  .additional-content-btn {
-    width: 40%;
-    bottom: 24px;
-    left: 30%;
-  }
-  .additional-content-content {
-    margin-bottom: 62px;
-  }
-}
+/* @media (max-width: 1000px) {
+  
+} */
