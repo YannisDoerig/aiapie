@@ -162,6 +162,19 @@ header {
 
 /* CSS that should be displayed if width is equal to or less than 800px goes here */
 @media (max-width: 600px) {
+  .header-content {
+    display: block;
+  }
+  .header-content-right {
+    display: none;
+  }
+  .header-content-left {
+    padding: 0 24px;
+    justify-content: space-between;
+  }
+  .header-link {
+    margin: 0;
+  }
   .intro-background img {
     width: 100%;
     height: auto;

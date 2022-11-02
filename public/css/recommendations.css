@@ -219,6 +219,19 @@ header {
 
 /* CSS that should be displayed if width is equal to or less than 800px goes here */
 @media (max-width: 900px) {
+  .header-content {
+    display: block;
+  }
+  .header-content-right {
+    display: none;
+  }
+  .header-content-left {
+    padding: 0 24px;
+    justify-content: space-between;
+  }
+  .header-link {
+    margin: 0;
+  }
   .content-introduction-wrapper {
     width: 94%;
   }
