@@ -35,6 +35,9 @@ header {
   align-items: center;
   color: white;
 }
+.header-link :hover {
+  border-bottom: 1px solid white;
+}
 .intro-wrapper {
   position: relative;
   margin-bottom: 4px;

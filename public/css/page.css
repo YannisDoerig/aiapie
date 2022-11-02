@@ -92,6 +92,9 @@ header {
   align-items: center;
   color: white;
 }
+.header-link :hover {
+  border-bottom: 1px solid white;
+}
 .intro-wrapper {
   display: flex;
   justify-content: center;
