@@ -103,6 +103,7 @@ header {
 }
 .content-text {
   padding-right: 24px;
+  color: rgb(64, 64, 64);
 }
 
 .content-description {
