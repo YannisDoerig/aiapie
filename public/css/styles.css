@@ -48,21 +48,41 @@ p {
   color: var(--main-text-color);
 }
 /* Header */
-.header-wrapper {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  font-size: larger;
-  font-weight: bold;
+header {
+  height: 80px;
   width: 100%;
-  padding: 0 24px 24px 24px;
-  justify-content: center;
+  background: black;
+  display: flex;
   align-items: center;
-  align-content: center;
-  text-align: center;
-  padding-top: 24px;
-  background: white;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  justify-content: center;
+}
+.header-content {
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-content-left {
+  display: flex;
+  align-items: center;
+}
+.header-content-right {
+  padding-right: 32px;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.header-logo img {
+  margin-right: 4px;
+  height: 30px;
+}
+.header-link {
+  margin-left: 32px;
+  display: flex;
+  align-items: center;
+  color: white;
 }
 /* Main */
 .main-wrapper {

@@ -1,3 +1,40 @@
+/* Header */
+header {
+  height: 80px;
+  width: 100%;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-content {
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-content-left {
+  display: flex;
+  align-items: center;
+}
+.header-content-right {
+  padding-right: 32px;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.header-logo img {
+  margin-right: 4px;
+  height: 30px;
+}
+.header-link {
+  margin-left: 32px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
 .intro-wrapper {
   position: relative;
   margin-bottom: 4px;
