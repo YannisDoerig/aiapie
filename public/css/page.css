@@ -54,6 +54,16 @@ p {
   font-size: medium;
   color: var(--secondary-text-color);
 }
+input {
+  display: block;
+  margin: 8px 0;
+  padding: 8px 6px;
+  border-width: 0 0 2px 0;
+  width: 100%;
+}
+form {
+  margin: 18px 0 8px 0;
+}
 /* Header */
 header {
   height: 80px;
@@ -147,6 +157,79 @@ header {
   background-color: black;
   color: white;
 }
+
+.register-email-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.register-email-container {
+  text-align: left;
+  width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  min-height: 218px;
+  margin-bottom: 12px;
+  padding: 12px;
+  background-color: #ffdee9;
+  background-image: linear-gradient(
+    92.7deg,
+    rgba(245, 212, 212, 1) 8.5%,
+    rgba(252, 251, 224, 1) 90.2%
+  );
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px #000000;
+  transition: 0.3s;
+}
+.register-email-container:hover {
+  box-shadow: 0 0 0 black;
+}
+.newsletter-title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+.newsletter-description {
+  font-size: 18px;
+}
+.newsletter-img {
+  margin: 22px 12px 22px 12px;
+  height: 200px;
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px #000000;
+}
+.register-email-inputs {
+  padding: 0 12px;
+  margin-top: 26px;
+}
+.register-email-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 12px;
+}
+.register-email-form-wrapper {
+  font-size: medium;
+  color: black;
+}
+.register-email-form-wrapper button[type="submit"] {
+  border: 0;
+  border-bottom: 2px solid black;
+  height: 35px;
+  color: black;
+}
+
+.register-email-form-wrapper button[type="submit"]:hover {
+  border: 0;
+  color: white;
+  background-image: linear-gradient(
+    102.1deg,
+    rgba(96, 221, 142, 1) 8.7%,
+    rgba(24, 138, 141, 1) 88.1%
+  );
+}
+
 /* Footer */
 .footer-wrapper {
   display: flex;
@@ -163,8 +246,18 @@ header {
   background-color: #000;
 }
 
-/* CSS that should be displayed if width is equal to or less than 800px goes here */
-@media (max-width: 600px) {
+/* CSS that should be displayed if width is equal to or less than 900px goes here */
+@media (max-width: 900px) {
+  input {
+    display: block;
+    margin: 8px 0;
+    padding: 8px 6px;
+    border-width: 0 0 2px 0;
+    width: 100%;
+  }
+  form {
+    margin: 18px 0 8px 0;
+  }
   .header-content {
     display: block;
   }
@@ -181,6 +274,7 @@ header {
   .intro-background img {
     width: 100%;
     height: auto;
+    margin-top: 0;
   }
   .banner img {
     width: 100%;
@@ -188,5 +282,36 @@ header {
   }
   .main-content {
     width: 90%;
+  }
+  .cta-btn {
+    display: flex;
+    justify-content: center;
+  }
+  /* Aiapie Newsletter */
+  .register-email-wrapper {
+    padding: 0 24px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .register-email-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 24px;
+  }
+  .newsletter-title {
+    width: 100%;
+    text-align: center;
+  }
+  .newsletter-description {
+    width: 100%;
+    text-align: center;
+  }
+  .newsletter-img-wrapper {
+    display: flex;
+    justify-content: center;
   }
 }

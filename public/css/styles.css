@@ -96,6 +96,7 @@ header {
   align-content: center;
   text-align: center;
 }
+
 /* Footer */
 .footer-wrapper {
   display: flex;
@@ -115,4 +116,18 @@ header {
     rgba(245, 212, 212, 1) 8.5%,
     rgba(252, 251, 224, 1) 90.2%
   );
+}
+
+/* CSS that should be displayed if width is equal to or less than 900px goes here */
+@media (max-width: 900px) {
+  input {
+    display: block;
+    margin: 8px 0;
+    padding: 8px 6px;
+    border-width: 0 0 2px 0;
+    width: 100%;
+  }
+  form {
+    margin: 18px 0 8px 0;
+  }
 }
