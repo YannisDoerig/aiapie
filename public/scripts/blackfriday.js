@@ -25,6 +25,7 @@ const app = initializeApp(firebaseConfig);
 const firestore = getFirestore(app);
 
 function handleForm(event) {
+  console.log("handle form started...");
   event.preventDefault();
   let newName = document.getElementById("newName").value;
   let newEmail = document.getElementById("newEmail").value;
@@ -51,6 +52,9 @@ let form = document
 
 function hideForm() {
   let form = (document.getElementById("email-form").style.display = "none");
-  document.getElementById("register-email-title").innerHTML =
+
+  document.getElementById("newsletter-title").innerHTML =
     "You Registered Successfully!";
+  document.getElementById("newsletter-description").innerHTML =
+    "Soon you will get your first Black Friday Offers in your email inbox.";
 }

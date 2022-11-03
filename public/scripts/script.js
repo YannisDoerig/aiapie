@@ -51,6 +51,8 @@ let form = document
 
 function hideForm() {
   let form = (document.getElementById("email-form").style.display = "none");
-  document.getElementById("register-email-title").innerHTML =
+  document.getElementById("newsletter-title").innerHTML =
     "You Registered Successfully!";
+  document.getElementById("newsletter-description").innerHTML =
+    "You Will find the first 3 Tools to try for free in your email inbox soon.";
 }
