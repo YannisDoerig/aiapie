@@ -8,14 +8,14 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
 
     <link rel="stylesheet" href="css/blackfriday.css" />
-    <!-- Google tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZR55T2JW8"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L7DPMESSRF"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-4ZR55T2JW8');
+      gtag('config', 'G-L7DPMESSRF');
     </script>
 
   </head>
@@ -30,8 +30,51 @@
       </div>
     </header>
     <div class="main">
+      <!-- Funnel Step 1 -->
+      <div class="funnel-step-wrapper" id="funnel-step-one">
+        <div class="funnel-container">
+          <div class="funnel-img-wrapper">
+            <img class="funnel-img" src="/images/news-logo.jpg" alt="aiapie newletter logo">
+          </div>
+          <div class="funnel-inputs">
+            <div class="funnel-title" id="newsletter-title">Get Best Black Friday Offers</div>
+            <div class="funnel-description">Step 1/3</div>
+          
+            <div class="funnel-form-wrapper">
+              <form ref="formRef" id="country-form">
+                <label for="countries">Countrie:</label>
+                <select id="countries" name="countries">
+                  <option value="usa">United States</option>
+                  <option value="ca">Canada</option>
+                  <option value="uk">United Kingdom</option>
+                  <option value="au">Australia</option>
+                </select>
+                <input type="submit" id="submitCountryBtn" value="Next"></input>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <div class="register-email-wrapper" id="blackfriday-newsletter">
+      <!-- Funnel Step 2 -->
+      <div class="funnel-step-wrapper hidden" id="funnel-step-two">
+        <div class="funnel-step-wrapper" id="funnel-step-one">
+          <div class="funnel-container">
+            <div class="funnel-img-wrapper">
+              <img class="funnel-img" src="/images/news-logo.jpg" alt="aiapie newletter logo">
+            </div>
+            <div class="funnel-inputs">
+              <div class="funnel-title">Get Best Black Friday Offers</div>
+              <button class="offer-type-btn" id="allOffersBtn">All Offers</button>
+              <button class="offer-type-btn" id="bfOffersBtn">Only Black Friday Offers</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Funnel Step 3 -->
+      <div class="funnel-step-wrapper hidden" id="funnel-step-three">
         <div class="register-email-container">
           <div class="newsletter-img-wrapper">
             <img class="newsletter-img" src="/images/news-logo.jpg" alt="aiapie newletter logo">
