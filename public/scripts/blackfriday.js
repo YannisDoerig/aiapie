@@ -25,8 +25,9 @@ const app = initializeApp(firebaseConfig);
 const firestore = getFirestore(app);
 let allOffers = true;
 let country = "";
+let name = "";
 
-function handleFirstForm(event) {
+function handleCountryForm(event) {
   event.preventDefault();
   country = document.getElementById("countries").value;
   if (country != undefined) {
@@ -36,13 +37,15 @@ function handleFirstForm(event) {
   }
 }
 
-function handleLastForm(event) {
+function handleEmailForm(event) {
   event.preventDefault();
   let newName = document.getElementById("newName").value;
   let newEmail = document.getElementById("newEmail").value;
   if (newName != undefined && newEmail != undefined) {
     hideForm();
+    name = newName;
     submitRegistration(country, newName, newEmail);
+    goToStepThree();
   } else {
     console.log("one of the values was undefined");
   }
@@ -52,57 +55,45 @@ function goToStepTwo() {
   let step1 = document
     .getElementById("funnel-step-one")
     .classList.add("hidden");
+
+  document.getElementById("newsletter-title").innerHTML =
+    "Free Access - Top Deals - " + country;
+
   let step2 = document
     .getElementById("funnel-step-two")
     .classList.remove("hidden");
-}
-function updateOfferOption() {
-  allOffers = false;
-  goToStepThree();
 }
 function goToStepThree() {
   let step2 = document
     .getElementById("funnel-step-two")
     .classList.add("hidden");
+
+  document.getElementById("final-funnel-step-title").innerHTML =
+    "Welcome " + name + "!";
+
   let step3 = document
     .getElementById("funnel-step-three")
     .classList.remove("hidden");
 }
 
 const submitRegistration = async function (country, newName, newEmail) {
-  if (allOffers) {
-    // Add a new document with a generated id.
-    const docRef = await addDoc(collection(firestore, "aiapie-all-offers"), {
-      name: newName,
-      email: newEmail,
-      country: country,
-    });
-  } else {
-    // Add a new document with a generated id.
-    const docRef = await addDoc(collection(firestore, "aiapie-blackfriday"), {
-      name: newName,
-      email: newEmail,
-      country: country,
-    });
-  }
+  // Add a new document with a generated id.
+  const docRef = await addDoc(collection(firestore, "aiapie-blackfriday"), {
+    name: newName,
+    email: newEmail,
+    country: country,
+  });
 
   console.log("Document written with ID: ", docRef.id);
 };
 
 let step1 = document
   .getElementById("country-form")
-  .addEventListener("submit", handleFirstForm);
-
-let step2btn1 = document
-  .getElementById("allOffersBtn")
-  .addEventListener("click", goToStepThree);
-let step2btn2 = document
-  .getElementById("bfOffersBtn")
-  .addEventListener("click", updateOfferOption);
+  .addEventListener("submit", handleCountryForm);
 
 let step3 = document
   .getElementById("email-form")
-  .addEventListener("submit", handleLastForm);
+  .addEventListener("submit", handleEmailForm);
 
 function hideForm() {
   let form3 = (document.getElementById("email-form").style.display = "none");

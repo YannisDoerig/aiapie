@@ -64,25 +64,16 @@ input {
 form {
   margin: 18px 0 8px 0;
 }
-input[type="checkbox"] {
-  display: none;
+input [type="submit"]:hover {
+  background: white;
+  font-weight: bold;
 }
-
-input#allOffers[type="checkbox"] + label {
-  background-image: url("http://aiapie.com/images/news-logo.jpg");
-  height: 100px;
-  width: 100px;
-  display: inline-block;
-  padding: 0 0 0 0px;
-  object-fit: contain;
-}
-input#bfOffers[type="checkbox"] + label {
-  background-image: url("http://aiapie.com/images/news-logo.jpg");
-  height: 100px;
-  width: 100px;
-  display: inline-block;
-  padding: 0 0 0 0px;
-  object-fit: cover;
+select {
+  display: block;
+  margin: 8px 0;
+  padding: 8px 6px;
+  border-width: 0 0 2px 0;
+  width: 100%;
 }
 /* Header */
 header {
@@ -155,6 +146,12 @@ header {
 .funnel-container:hover {
   box-shadow: 0 2px 4px black;
 }
+.funnel-inputs {
+  margin-left: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .funnel-title {
   font-weight: bold;
   font-size: 24px;
@@ -162,9 +159,10 @@ header {
 }
 .funnel-description {
   font-size: 18px;
+  font-weight: normal;
 }
 .funnel-img {
-  margin: 22px 12px 22px 12px;
+  margin: 18px 12px 22px 22px;
   height: 200px;
   width: 200px;
   border-radius: 12px;
@@ -173,22 +171,20 @@ header {
 .funnel-form-wrapper {
   font-size: medium;
   color: black;
+  width: 65%;
 }
-.funnel-form-wrapper button[type="submit"] {
-  border: 0;
-  border-bottom: 2px solid black;
-  height: 35px;
-  color: black;
+input[type="submit"] {
+  display: block;
+  margin: 8px 0 0 0;
+  padding: 8px 6px;
+  border-width: 0 0 2px 0;
+  width: 100%;
+  background: white;
+  transition: 0.2s;
 }
 
-.funnel-form-wrapper button[type="submit"]:hover {
-  border: 0;
-  color: white;
-  background-image: linear-gradient(
-    102.1deg,
-    rgba(96, 221, 142, 1) 8.7%,
-    rgba(24, 138, 141, 1) 88.1%
-  );
+input[type="submit"]:hover {
+  background: #daffe4;
 }
 
 .register-email-container {
@@ -219,17 +215,21 @@ header {
 }
 .newsletter-description {
   font-size: 18px;
+  font-weight: normal;
 }
 .newsletter-img {
-  margin: 22px 12px 22px 12px;
+  margin: 18px 12px 22px 22px;
   height: 200px;
   width: 200px;
   border-radius: 12px;
   box-shadow: 0px 4px 8px #000000;
 }
 .register-email-inputs {
-  padding: 0 12px;
-  margin-top: 26px;
+  margin-left: 32px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .register-email-title {
   font-size: 24px;
@@ -238,26 +238,79 @@ header {
   margin-bottom: 12px;
 }
 .register-email-form-wrapper {
+  width: 65%;
   font-size: medium;
   color: black;
 }
-.register-email-form-wrapper button[type="submit"] {
-  border: 0;
-  border-bottom: 2px solid black;
-  height: 35px;
+
+.final-funnel-title {
+  font-size: 48px;
+  font-weight: bold;
+}
+.final-funnel-description {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 24px;
+}
+.first-offers-wrapper {
+  margin-top: 32px;
+}
+.offers-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.offer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offer-btn {
+  cursor: pointer;
+  height: 220px;
+  width: 220px;
+  padding: 8px 12px;
+  margin-top: 24px;
+
+  box-shadow: 0px 4px 8px #000000;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+.offer-btn:hover {
+  box-shadow: 0 2px 4px black;
+  cursor: pointer;
+}
+#offerOneBtn {
+  background: url("http://localhost:5005/images/iphone-offer.jpg") no-repeat;
+  background-size: cover;
+}
+#offerTwoBtn {
+  background: url("http://localhost:5005/images/amazon-black-friday.jpg")
+    no-repeat;
+  background-size: cover;
+}
+#offerThreeBtn {
+  background: url("http://localhost:5005/images/walmart-black-friday.jpg")
+    no-repeat;
+  background-size: cover;
+}
+.offer-link {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.offer-title {
+  font-weight: bold;
   color: black;
-}
-
-.register-email-form-wrapper button[type="submit"]:hover {
+  margin-top: 12px;
   border: 0;
-  color: white;
-  background-image: linear-gradient(
-    102.1deg,
-    rgba(96, 221, 142, 1) 8.7%,
-    rgba(24, 138, 141, 1) 88.1%
-  );
+  transition: 0.3s;
 }
-
+.offer-title:hover {
+  border-bottom: 2px solid black;
+}
 /* Footer */
 .footer-wrapper {
   display: flex;
@@ -300,6 +353,9 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .funnel-form-wrapper {
+    width: 100%;
   }
   /* Aiapie Newsletter */
   .register-email-container {
