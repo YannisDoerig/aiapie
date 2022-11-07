@@ -328,51 +328,63 @@ input[type="submit"]:hover {
 
 /* CSS that should be displayed if width is equal to or less than 900px goes here */
 @media (max-width: 900px) {
-  input {
-    display: block;
-    margin: 8px 0;
-    padding: 8px 6px;
-    border-width: 0 0 2px 0;
-    width: 100%;
-  }
-  form {
-    margin: 18px 0 8px 0;
-  }
-  .header-content {
-    display: block;
-    margin-left: 24px;
-  }
   .main {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .funnel-step-wrapper {
-    width: 100%;
+    margin-top: 12px;
+    padding: 12px 0;
+  }
+  .funnel-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+  }
+  .funnel-title {
+    font-size: 18px;
+  }
+  .register-email-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .funnel-form-wrapper {
+    font-size: medium;
+    color: black;
     width: 100%;
   }
-  /* Aiapie Newsletter */
-  .register-email-container {
-    width: 90%;
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 24px;
-    margin-bottom: 24px;
+  .funnel-inputs {
+    margin-left: 0;
+    padding: 0 12px;
   }
   .newsletter-title {
-    width: 100%;
-    text-align: center;
+    font-size: 18px;
   }
-  .newsletter-description {
+  .register-email-form-wrapper {
     width: 100%;
-    text-align: center;
   }
-  .newsletter-img-wrapper {
+  .register-email-inputs {
+    margin-top: 8px;
+    margin-left: 0;
+    padding: 0 12px;
+  }
+  .final-funnel-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .final-funnel-description {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 24px;
+  }
+  .offers-wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .offers-description {
+    text-align: center;
   }
 }

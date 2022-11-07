@@ -68,6 +68,8 @@ function goToStepThree() {
     .getElementById("funnel-step-two")
     .classList.add("hidden");
 
+  document.getElementById("main").style.height = "auto";
+
   document.getElementById("final-funnel-step-title").innerHTML =
     "Welcome " + name + "!";
 
