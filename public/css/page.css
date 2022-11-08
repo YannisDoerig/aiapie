@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 * {
-  list-style: none;
   text-decoration: none;
   margin: 0;
   padding: 0;
@@ -50,8 +49,16 @@ h2 {
   font-size: large;
   color: var(--main-text-color);
 }
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--main-text-color);
+  margin-bottom: 4px;
+}
 p {
-  font-size: medium;
+  font-size: 18px;
+  font-weight: normal;
+
   color: var(--secondary-text-color);
 }
 input {
@@ -116,7 +123,7 @@ header {
 }
 .banner img {
   margin-top: 24px;
-  max-width: 600px;
+  width: 600px;
   height: auto;
 }
 /* Main */
@@ -141,6 +148,65 @@ header {
 }
 .subtitle {
   margin: 12px 0;
+}
+/* Index */
+.index-point {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 4px;
+}
+.index-point-img {
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+}
+.index-point-text {
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  transition: 0.2s;
+}
+.index-point-text:hover {
+  border-bottom: 2px solid black;
+}
+/* fonti */
+.fonte {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  font-weight: normal;
+}
+.fonte-testo {
+  margin-right: 6px;
+}
+/* Bullet Points */
+ol.nr-bullet-points {
+  list-style-type: numbers;
+  padding-left: 32px;
+}
+ol.dot-bullet-points {
+  list-style-type: circle;
+  padding-left: 32px;
+}
+li {
+  margin-top: 12px;
+  font-weight: normal;
+}
+.content-bullet-point {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.content-bullet-point-img {
+  height: 26px;
+  width: 26px;
+  margin-right: 8px;
+}
+.content-bullet-point-text {
+  font-size: 17px;
 }
 .cta-btn button {
   border: 1px solid black;
