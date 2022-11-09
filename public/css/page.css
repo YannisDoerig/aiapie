@@ -149,6 +149,9 @@ header {
 .subtitle {
   margin: 12px 0;
 }
+.ultimo-aggiornamento {
+  font-size: 14px;
+}
 /* Index */
 .index-point {
   display: flex;
@@ -182,6 +185,32 @@ header {
 .fonte-testo {
   margin-right: 6px;
 }
+/* compare 2 products */
+.compare-two-products-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 12px;
+  margin-bottom: 24px;
+}
+.product-wrapper {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+}
+.product-introduction {
+  margin-bottom: 12px;
+}
+.product-title {
+  color: black;
+  border-bottom: 2px solid transparent;
+  transition: 0.2s;
+}
+.product-title:hover {
+  color: rgb(21, 94, 154);
+}
+.product-description {
+  margin: 12px 0;
+}
 /* Bullet Points */
 ol.nr-bullet-points {
   list-style-type: numbers;
@@ -198,7 +227,7 @@ li {
 .content-bullet-point {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  margin-bottom: 12px;
 }
 .content-bullet-point-img {
   height: 26px;
@@ -206,6 +235,7 @@ li {
   margin-right: 8px;
 }
 .content-bullet-point-text {
+  margin-top: 3px;
   font-size: 17px;
 }
 .cta-btn button {
