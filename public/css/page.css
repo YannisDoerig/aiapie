@@ -383,6 +383,15 @@ li {
     display: flex;
     justify-content: center;
   }
+  /* confronto 2 prodotti */
+  .compare-two-products-wrapper {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .product-wrapper {
+    margin-bottom: 24px;
+  }
   /* Aiapie Newsletter */
   .register-email-wrapper {
     padding: 0 24px;
