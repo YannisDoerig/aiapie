@@ -287,15 +287,15 @@ input[type="submit"]:hover {
   cursor: pointer;
 }
 #offerOneBtn {
-  background: url("http://aiapie.com/images/iphone-offer.jpg") no-repeat;
+  background: url("http://aiapie.com/images/black-friday-cash.jpg") no-repeat;
   background-size: cover;
 }
 #offerTwoBtn {
-  background: url("http://aiapie.com/images/amazon-black-friday.jpg") no-repeat;
+  background: url("http://aiapie.com/images/black-friday-target.jpg") no-repeat;
   background-size: cover;
 }
 #offerThreeBtn {
-  background: url("http://aiapie.com/images/walmart-black-friday.jpg") no-repeat;
+  background: url("http://aiapie.com/images/black-friday-walmart.jpg") no-repeat;
   background-size: cover;
 }
 .offer-link {
