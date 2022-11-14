@@ -1,0 +1,118 @@
+/* Header */
+header {
+  height: 80px;
+  width: 100%;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-content {
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-content-left {
+  display: flex;
+  align-items: center;
+}
+.header-content-right {
+  padding-right: 32px;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.header-logo img {
+  margin-right: 4px;
+  height: 30px;
+}
+.header-link {
+  margin-left: 32px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.header-link :hover {
+  border-bottom: 1px solid white;
+}
+.intro-wrapper {
+  position: relative;
+  margin-bottom: 4px;
+  background: rgb(27, 27, 27);
+  height: 240px;
+  width: 100%;
+}
+.intro-overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.intro-overlay img {
+  margin-top: 8px;
+  object-fit: fill;
+  height: 120px;
+  width: 120px;
+  margin-bottom: 12px;
+}
+.intro-overlay h1 {
+  margin: 12px 0;
+}
+
+/* Main contant */
+.main-wrapper {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+}
+.content-wrapper {
+  width: 800px;
+}
+.content-intro h1 {
+  margin: 12px;
+}
+#contact-form {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  padding: 12px;
+  margin-bottom: 4px;
+}
+textarea {
+  padding: 12px;
+  margin-bottom: 4px;
+}
+#submitBtn {
+  margin-bottom: 36px;
+}
+
+/* CSS that should be displayed if width is equal to or less than 800px goes here */
+@media (max-width: 900px) {
+  .header-content {
+    display: block;
+  }
+  .header-content-right {
+    display: none;
+  }
+  .header-content-left {
+    padding: 0 24px;
+    justify-content: space-between;
+  }
+  .header-link {
+    margin: 0;
+  }
+  .content-wrapper {
+    height: auto;
+    width: 94%;
+  }
+}
