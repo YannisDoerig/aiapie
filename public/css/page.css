@@ -134,9 +134,6 @@ header {
   width: 100%;
   padding: 0 24px 24px 24px;
   justify-content: center;
-  align-items: center;
-  align-content: center;
-
   padding-top: 24px;
 }
 .main-content {
@@ -184,6 +181,10 @@ header {
 }
 .fonte-testo {
   margin-right: 6px;
+}
+/* link nel testo */
+.paragraph-link{
+  color: blue;
 }
 /* compare 2 products */
 .compare-two-products-wrapper {
