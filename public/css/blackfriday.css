@@ -192,61 +192,6 @@ input[type="submit"]:hover {
   background: #daffe4;
 }
 
-.register-email-container {
-  text-align: left;
-  width: 800px;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  min-height: 218px;
-  margin-bottom: 12px;
-  padding: 12px;
-  background-color: #ffdee9;
-  background-image: linear-gradient(
-    92.7deg,
-    rgba(245, 212, 212, 1) 8.5%,
-    rgba(252, 251, 224, 1) 90.2%
-  );
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px #000000;
-  transition: 0.3s;
-}
-.register-email-container:hover {
-  box-shadow: 0 2px 4px black;
-}
-.newsletter-title {
-  font-weight: bold;
-  font-size: 24px;
-  margin-bottom: 12px;
-}
-.newsletter-description {
-  font-size: 18px;
-  font-weight: normal;
-}
-.newsletter-img {
-  margin: 18px 12px 22px 22px;
-  height: 200px;
-  width: 200px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 8px #000000;
-}
-.register-email-inputs {
-  margin-left: 32px;
-  margin-top: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.register-email-title {
-  font-size: 24px;
-  font-weight: bold;
-  color: black;
-  margin-bottom: 12px;
-}
-.register-email-form-wrapper {
-  width: 65%;
-  font-size: medium;
-  color: black;
-}
 
 .final-funnel-title {
   font-size: 48px;
@@ -257,9 +202,6 @@ input[type="submit"]:hover {
   font-weight: bold;
   margin-top: 24px;
 }
-.first-offers-wrapper {
-  margin-top: 32px;
-}
 .offers-wrapper {
   display: flex;
   flex-direction: row;
@@ -269,6 +211,9 @@ input[type="submit"]:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#center-offer{
+  margin: 0 12px;
 }
 
 .offer-btn {
