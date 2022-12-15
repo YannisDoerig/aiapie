@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eros</title>
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+
+    <link rel="stylesheet" href="css/inviaarticolo.css" />
+  </head>
+  <body>
+    <div class="inviaArticoloWrapper">
+        <div class="initArticleWrapper" id="init-article-wrapper">
+            <div id="init-wrapper" class="initArticleContent">
+                <h2>Inizializza Articolo:</h2>
+                <form class="initForm" id="init-form">
+                    <label for="">Nome articolo nel link: aiapie.com/NOME-NOME</label>
+                    <input id="page-sublink-input" type="text" placeholder="es: recensione-jasper" required>
+                    <label for="">Titolo google:</label>
+                    <input id="page-title-input" type="text" placeholder="es: 10 Ragioni per cui usare Jasper" required>
+                    <label for="">Paragrafo google:</label>
+                    <textarea id="page-meta-input" cols="30" rows="10" required></textarea>
+                    <label for="">Link Affiliazione Jasper:</label>
+                    <input id="affiliate-link-input" type="link" placeholder="hppts://jasper.ai/...." required>
+                    <input class="initArticleBtn" type="submit" value="Inizia Articolo">
+                </form>
+            </div>
+        </div>
+        <div class="inviaArticoloContent hidden" id="create-article-wrapper">
+            <div class="inviaArticoloInput">
+                <div class="inviaArticoloInputStandard">
+                    <div class="inviaArticoloSectionTitle">Input</div>
+                    <div class="inviaArticoloInputTypeWrapper">
+                        <div class="inputOption active" id="title-element">Titolo</div>
+                        <div class="inputOption" id="subtitle-element">Sottotitolo</div>
+                        <div class="inputOption" id="subsubtitle-element">Sotto-sottotitolo</div>
+                        <div class="inputOption" id="paragraph-element">Paragrafo</div>
+                        <div class="inputOption" id="image-element">Immagine</div>
+                        <div class="inputOption" id="text-image-element">Testo + Img</div>
+                        <div class="inputOption" id="banner-element">Jasper Banner</div>
+                        <div class="inputOption" id="button-element">Bottone</div>
+                        <div class="inputOption" id="index-element">Indice</div>
+                        <div class="inputOption" id="bullentpoints-element">Elenco Puntato</div>
+                    </div>
+                    <label for="">Inserisci alla posizione nr:</label>
+                    <input class="posizioneInserzione" type="text" id="input-new-block-position" value="1">
+                </div>
+                <div class="inviaArticoloInputBlocks">
+                    <!-- Titolo -->
+                    <div class="inputBlock active" id="title-element-block">
+                        <label for="">Titolo</label>
+                        <input type="text" id="block-title-input" placeholder="titolo">
+                        <button class="btnCreateBlock" id="block-title-btn">Crea</button>
+                    </div>
+                    <!-- Sottotitolo -->
+                    <div class="inputBlock" id="subtitle-element-block">
+                        <label for="">Sottotitolo</label>
+                        <input type="text" id="block-subtitle-input" placeholder="sottotitolo">
+                        <button class="btnCreateBlock" id="block-subtitle-btn">Crea</button>
+                    </div>
+                    <!-- Sotto-sottotitolo -->
+                    <div class="inputBlock" id="subsubtitle-element-block">
+                        <label for="">Sotto-sottotitolo</label>
+                        <input type="text" id="block-subsubtitle-input" placeholder="sott-sottotitolo">
+                        <button class="btnCreateBlock" id="block-subsubtitle-btn">Crea</button>
+                    </div>
+                    <!-- Paragrafo -->
+                    <div class="inputBlock" id="paragraph-element-block">
+                        <label for="">Paragrafo</label>
+                        <textarea class="paragraphTextarea" name="" id="block-paragraph-input" cols="30" rows="10" placeholder="paragrafo..."></textarea>
+                        <button class="btnCreateBlock" id="block-paragraph-btn">Crea</button>
+                    </div>
+                    <!-- Immagini -->
+                    <div class="inputBlock" id="image-element-block">
+                        <label for="">Immagini</label>
+                        <input type="text" id="block-images-nome-img" placeholder="nome immagine">
+                        <input type="text" id="block-images-link-click" placeholder="link click immagine">
+                        <button class="addFonteBtn" id="add-fonte-btn">Aggiungi Fonte</button>
+                        <input type="text" class="hidden" id="block-images-link-fonte" placeholder="link fonte">
+                        <input type="text" class="hidden" id="block-images-nome-fonte" placeholder="nome fonte">
+                        <button class="btnCreateBlock" id="block-images-btn">Crea</button>
+                    </div>
+                    <!-- Testo + img -->
+                    <div class="inputBlock" id="text-image-element-block">
+                        <label for="">Testo + Img</label>
+                        <textarea class="paragraphTextarea" name="" id="block-text-img-text-input" cols="30" rows="10" placeholder="paragrafo..."></textarea>
+                        <input type="text" id="block-text-img-image-nome-img" placeholder="nome immagine">
+                        <button class="btnCreateBlock" id="block-text-img-btn">Crea</button>
+                    </div>
+                    <!-- Jasper Banner -->
+                    <div class="inputBlock" id="banner-element-block">
+                        <select class="bannerDropdown" name="banners" id="banners-dropdown">
+                            <option value="banner-5-giorni">5 Days Free Trial</option>
+                            <option value="banner-25-lingue">25 Lingue</option>
+                            <option value="banner-articoli-di-qualità">Articoli di Qualita</option>
+                            <option value="banner-blocco-srittore">Blocco Scrittore</option>
+                            <option value="banner-come-aiutarti">Come Aiutarti</option>
+                            <option value="banner-cosa-puo-scrivere">Cosa puo Scrivere</option>
+                            <option value="banner-recensione">Recensioni</option>
+                            <option value="banner-sono-jasper">Sono Jasper</option>
+                        </select>
+                        <label for="">Link click Banner</label>
+                        <input type="text" id="block-banner-link" placeholder="https://jasper.ai.....">
+                       
+                        <button class="btnCreateBlock" id="block-banner-btn">Crea</button>
+                    </div>
+                    <!-- Bottone -->
+                    <div class="inputBlock" id="button-element-block">
+                        <label for="">Testo Bottone</label>
+                        <input type="text" id="block-button-text" value="Prova Gratis - Jasper AI">
+                        <label for="">Link Bottone</label>
+                        <input type="text" id="block-button-link" placeholder="https://jasper.ai.....">
+                        <button class="btnCreateBlock" id="block-button-btn">Crea</button>
+                    </div>
+                    <!-- Index -->
+                    <div class="inputBlock" id="index-element-block">
+                        <label for="">Quantita punti indice: </label>
+                        <input type="number" id="block-index-quantity" value="6">
+                        <button id="button-create-index-input">Continua</button>
+                        <div class="appendToInput" id="index-points-inputs-wrapper"></div>
+                        <button class="btnCreateBlock hidden" id="block-index-btn">Crea</button>
+                    </div>
+                    <!-- Elenco puntato -->
+                    <div class="inputBlock" id="bullentpoints-element-block">
+                        <label for="">Quantita punti indice: </label>
+                        <input type="number" id="block-bullentpoints-quantity" value="6">
+                        <button id="button-create-bullentpoints-input">Continua</button>
+                        <div class="appendToInput" id="bullentpoints-inputs-wrapper"></div>
+                        <button class="btnCreateBlock hidden" id="block-bulletpoints-btn">Crea</button>
+                    </div>
+                </div>
+            </div>
+            <div class="inviaArticoloOutput">
+                <div class="inviaArticoloSectionTitle">Output</div>
+                <div class="outputAreaWrapper">
+                    <div id="created-elements-wrapper"></div>
+                </div>
+                <button class="btnPreview" id="article-preview-btn">Preview</button>
+            </div>
+        </div>
+
+        <div class="previewWrapper hidden" id="preview-wrapper">
+            <div class="previewHeaderWrapper">
+                <div class="previewHeaderTitle">Article Preview:</div>
+                <div class="btnsWrapper">
+                    <button id="close-preview-btn">Chiudi</button>
+                    <button id="submit-preview-btn">Invia a Yannis</button>
+                </div>
+            </div>
+            <div class="previewContent" id="preview-content"></div>
+            
+        </div>
+        <div class="warningWrapper hidden" id="warning-wrapper">
+            <div class="warningContent">
+                <div class="warningTitle" id="warning-title">ATTENZIONE</div>
+                <div class="warningText">Sei sicuro che l'articolo è pronto? guai a te se non hai controllato TUTTE le seguenti cose 12 volte.</div>
+                <form class="warningForm" id="warning-form">
+                    <div class="warningPoint">
+                        <input type="checkbox" required>
+                        <label>Hai fatto grammar check?</label>
+                    </div>
+                    <div class="warningPoint">
+                        <input type="checkbox" required>
+                        <label>Hai fatto check plagio?</label>
+                    </div>
+                    <div class="warningPoint">
+                        <input type="checkbox" required>
+                        <label>Non c'è nulla che può essere meglio?</label>
+                    </div>
+                    <div class="warningPoint">
+                        <input type="checkbox" required>
+                        <label>Hai provato a leggere l'articolo da sotto a sopra?</label>
+                    </div>
+                    <div class="warningPoint">
+                        <input type="checkbox" required>
+                        <label>Le immagini nella cartella le hai caricate su tipyPNG?</label>
+                    </div>
+                    <div class="warningPoint">
+                        <input type="checkbox" required>
+                        <label>Dai controlla ancora una volta che ogni dettaglio è a posto...</label>
+                    </div>
+                    <div class="warningBtnsWrapper">
+                        <button class="warningBackBtn">Si, vado a mettere a posto</button>
+                        <input class="warningSubmitBtn" type="submit" value="1000% tutto Top - INVIA">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="finalPage hidden" id="final-page-wrapper">
+            <div class="finalPageContent">
+                <div class="finalPageText" id="final-page-text">Aspetta, sta inviando l'articolo...</div>
+                <div class="final-page-result" id="final-page-result"></div>
+                <button id="btn-vedi-codice">Vedi Codice</button>
+            </div>
+        </div>
+    </div>
+  
+
+    <script type="module" src="scripts/inviaarticolo.js"></script>
+
+  </body>
+</html>

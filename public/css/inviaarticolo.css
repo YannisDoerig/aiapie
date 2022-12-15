@@ -1,0 +1,387 @@
+html,
+body{
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0;
+}
+input{
+    padding: .4rem;
+}
+.inviaArticoloWrapper{
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    background: #fff;
+    color: #000;
+    padding: 1rem;
+}
+
+.inviaArticoloContent{
+    height: calc(100% - 40px);
+    position: relative;
+    overflow: unset;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+    background: rgb(246, 246, 246);
+    border-radius: 10px;
+    padding: .6rem;
+}
+
+
+.inviaArticoloInput{
+    box-sizing: border-box;
+    padding: 1rem 1rem 0 1rem;
+    border-right: 1px solid #2222;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.inviaArticoloOutput{
+    box-sizing: border-box;
+    padding: 1rem 1rem 0 1rem;
+    height: 100%;
+    overflow-y: auto;
+}
+
+h1{
+    color: #000;
+}
+h2{
+    color: #000;
+}
+p{
+    color: #000;
+}
+
+/* titolo sezione pagina */
+.inviaArticoloSectionTitle{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #2222;
+}
+
+/* Init Article */
+.initArticleWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.initArticleContent{
+    width: 600px;
+    padding: 2rem;
+    border-radius: 10px;
+    background: #eaf3ff;
+    box-shadow: 0 1px 2px 1px #777;
+}
+.initForm{
+    display: flex;
+    flex-direction: column;
+}
+.initForm input {
+    margin-top: .2rem;
+    margin-bottom: .4rem;
+}
+#page-meta-input{
+    margin-top: .2rem;
+    margin-bottom: .4rem;
+}
+.initArticleBtn{
+    margin-top: 1rem;
+    padding: .4rem 0;
+    background: rgb(218, 255, 229);
+    border: 0;
+    cursor: pointer;
+    transition: .3s;
+}
+.initArticleBtn:hover{
+    background: black;
+    color: white;
+}
+
+/* Menu tabs */
+.inviaArticoloInputTypeWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+.inputOption{
+    margin-right: .1rem;
+    margin-top: .1rem;
+    padding: .4rem .8rem;
+    background: #ddd;
+    color: #000;
+    cursor: pointer;
+    border-radius: 10px;
+    width: fit-content;
+}
+.inputOption.active{
+    padding: .4rem .8rem;
+    background: #000;
+    color: #fff;
+}
+
+.posizioneInserzione{
+    width: 1.4rem;
+    height: 1.4rem;
+    text-align: center;
+}
+
+
+.paragraph{
+    margin-top: 1rem;
+}
+
+.inputBlock{
+   display: none;
+}
+
+.inputBlock.active{
+    border-radius: 10px;
+    margin: 1.4rem 0;
+    padding: 1.4rem 1rem;
+    background: rgba(255, 254, 251, 0.867);
+    box-shadow: 0 1px 4px 1px rgb(171, 171, 171);
+    display: flex;
+    flex-direction: column;
+}
+.inputBlock input{
+    margin: .4rem 0;
+}
+button{
+    border: 1px solid #777;
+    border-radius: 10px;
+    padding: .2rem 0;
+    font-weight: bold;
+}
+.btnCreateBlock{
+    background: rgb(187, 234, 255);
+}
+.btnPreview{
+    background: rgb(187, 255, 207);
+    border-radius: 10px;
+    padding: .2rem 0;
+    font-weight: bold;
+}
+.addFonteBtn{
+    margin-bottom: 1rem;
+}
+.paragraphTextarea{
+    margin: .6rem 0;
+    resize: none;
+}
+
+.textAndImgWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.textAndImgWrapper img{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/* Output */
+.inviaArticoloOutput{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+}
+.outputAreaWrapper{
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #2222;
+    background: rgba(255, 254, 251, 0.867);
+}
+.elementWrapper{
+    padding: 2rem 1rem 1rem 1rem;
+    position: relative;
+    max-width: 100%;
+    box-sizing: border-box;
+    background: rgba(253, 251, 246, 0.867);
+    box-shadow: 0 1px 2px 1px rgba(221, 219, 212, 0.867);
+    border-radius: 10px;
+    margin: .4rem;
+}
+.elementCounter{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+.deleteBtn{
+    background: rgb(255, 89, 89);
+    color: #fff;
+    padding: .2rem .4rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+.bannerDropdown{
+    padding: .4rem;
+}
+.banner{
+    margin-top: 1.8rem;
+    width: 100%;
+    min-height: 10rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.banner img{
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Article Preview */
+.previewWrapper{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        92.7deg,
+        rgba(245, 212, 212, 1) 8.5%,
+        rgba(252, 251, 224, 1) 90.2%
+    );
+    font-family: sans-serif;
+    margin: 0px; /* removed standart pargin of 8px*/
+    position: relative; /* required if we want to use "position: absolute" on a child element */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.previewHeaderWrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #d4d4d4;
+    margin-bottom: 1rem;
+}
+.btnsWrapper{
+    display: flex;
+}
+.previewHeaderTitle{
+    font-weight: bold;
+    font-size: 24px;
+}
+.btnsWrapper button {
+    padding: .4rem 1rem;
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.previewContent{
+    overflow-y: auto;
+    max-width: 600px;
+  text-align: left;
+}
+.cta-btn button{
+    padding: 1rem 2rem;
+    margin-top: 1.8rem;
+    cursor: pointer;
+}
+.appendToInput{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Index */
+.index-point {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4px;
+  }
+  .index-point-img {
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+  }
+  .index-point-text {
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+  }
+  .index-point-text:hover {
+    border-bottom: 2px solid black;
+  }
+
+  /* bulletpoint */
+  ol.dot-bullet-points {
+    list-style-type: circle;
+    padding-left: 32px;
+  }
+
+
+
+
+
+/*  Warning Modal */
+.warningWrapper{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.warningContent{
+    max-width: 600px;
+    padding: 2rem;
+    border-radius: 10px;
+    background: rgba(255, 131, 100, 0.133);
+}
+
+.warningTitle{
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 2rem;
+}
+.warningText{
+    margin: .8rem 0;
+}
+.warningPoint{
+    margin: .4rem 0;
+}
+.warningBtnsWrapper{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.warningBackBtn{
+    cursor: pointer;
+    border-radius: 10px;
+    width: 48%;
+    background: rgba(67, 255, 111, 0.791);
+}
+.warningSubmitBtn{
+    cursor: help;
+    border-radius: 10px;
+    width: 48%;
+    color: #fff;
+    background: rgba(255, 50, 50, 0.791);
+}
+
+
+.hidden{
+    display: none;
+}
